@@ -13,6 +13,9 @@ import {PanelModule} from 'primeng/panel';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import {MenuModule} from 'primeng/menu';
 import {ToastModule} from 'primeng/toast';
+import {DynamicDialogModule} from 'primeng/dynamicdialog';
+import {ButtonModule} from 'primeng/button';
+import {ContextMenuModule} from 'primeng/contextmenu';
 
 @NgModule({
   declarations: [],
@@ -30,7 +33,10 @@ import {ToastModule} from 'primeng/toast';
     PanelModule,
     SplitButtonModule,
     MenuModule,
-    ToastModule
+    ToastModule,
+    DynamicDialogModule,
+    ButtonModule,
+    ContextMenuModule
   ],
   exports: [
     PasswordModule,
@@ -45,7 +51,10 @@ import {ToastModule} from 'primeng/toast';
     PanelModule,
     SplitButtonModule,
     ToastModule,
-    MenuModule
+    MenuModule,
+    DynamicDialogModule,
+    ButtonModule,
+    ContextMenuModule
   ]
 })
 export class PrimeNGModule { }

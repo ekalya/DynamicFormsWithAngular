@@ -3,6 +3,9 @@
   <div [ngSwitch]="control.controlType">
  
     <input *ngSwitchCase="'textbox'" [formControlName]="control.key"
+            [id]="control.key" pInputText [type]="control.type">
+
+   <input *ngSwitchCase="'textboxfilter'" [formControlName]="control.key"
             [id]="control.key" pInputText [type]="control.type" [pKeyFilter]="control.keyFilter">
 
     <input *ngSwitchCase="'password'" [formControlName]="control.key"
@@ -30,7 +33,6 @@
           </div>
         </ng-template>
       </p-pickList>
-      <app-dynamic-list [listItems]="control.value" [cols]="control.getColumns()" ></app-dynamic-list>
     </div>
 
     <select [id]="control.key" *ngSwitchCase="'dropdown'" [formControlName]="control.key">
